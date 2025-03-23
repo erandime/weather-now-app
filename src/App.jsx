@@ -7,7 +7,7 @@ export default function App() {
 
   return (
     <div>
-      <video autoplay muted loop id="myVideo">
+      <video autoPlay muted loop id="myVideo">
         <source src="/assets/video.mp4" type="video/mp4" />
         Your browser does not support HTML5 video.
       </video>

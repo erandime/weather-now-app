@@ -14,7 +14,7 @@ export default function Description() {
           prebuilt components, and powerful JavaScript plugins.
         </strong>
       </p>
-      <div class="input-group mb-3 justify-content-md-start">
+      <div className="input-group mb-3 justify-content-md-start">
         <input
           type="text"
           class="form-control"
