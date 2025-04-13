@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { useState } from "react";
 import Description from "./Description";
 import Weather from "./Weather";
-import './App.css'
+import "./App.css";
 
 export default function App() {
+  const [weatherData, setWeatherData] = useState(null);
 
   return (
     <div>
@@ -13,12 +14,10 @@ export default function App() {
       </video>
       <div className="container col-xxl-8 px-4 py-5 m-auto App">
         <div className="row justify-content-center align-items-center min-vh-100 g-5 py-5">
-          <Description />
-          <Weather />
+          <Description setWeatherData={setWeatherData} />
+          <Weather weatherData={weatherData} />
         </div>
       </div>
     </div>
   );
 }
-
-
